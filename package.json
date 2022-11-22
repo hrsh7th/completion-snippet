@@ -1,0 +1,18 @@
+{
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "vim",
+        "path": "./snippets/vim.json"
+      },
+      {
+        "language": "lua",
+        "path": "./snippets/lua.json"
+      }
+    ]
+  }
+}
