@@ -54,7 +54,7 @@
     ]
   },
   "for-ipairs": {
-    "prefix": "for ... in ipairs() do ",
+    "prefix": "for ... ipairs() do ",
     "body": [
       "for $2 in ipairs($1) do",
       "\t$TM_SELECTED_TEXT$3",
@@ -62,7 +62,7 @@
     ]
   },
   "for-pairs": {
-    "prefix": "for ... in pairs() do ",
+    "prefix": "for ... pairs() do ",
     "body": [
       "for $2 in pairs($1) do",
       "\t$TM_SELECTED_TEXT$3",
