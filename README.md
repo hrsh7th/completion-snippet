@@ -11,7 +11,7 @@ The VSCode's snippet collection for completion.
 # Usage
 
 ```vim
-nnoremap c <Plug>(vsnip-cut-text)
-xnoremap c <Plug>(vsnip-cut-text)
+nmap c <Plug>(vsnip-cut-text)
+xmap c <Plug>(vsnip-cut-text)
 ```
 
