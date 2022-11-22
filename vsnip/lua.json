@@ -1,0 +1,97 @@
+{
+  "if": {
+    "prefix": "if ... then",
+    "body": [
+      "if $1 then",
+      "\t$TM_SELECTED_TEXT$2",
+      "end"
+    ]
+  },
+  "local-var": {
+    "prefix": "local var = ...",
+    "body": [
+      "local $1 = $2"
+    ]
+  },
+  "local-function": {
+    "prefix": "local function (...)",
+    "body": [
+      "local function $1($2)",
+      "\t$TM_SELECTED_TEXT$3",
+      "end"
+    ]
+  },
+  "local-pcall": {
+    "prefix": "local ok, res = pcall(function()",
+    "body": [
+      "local ok, res = pcall(function()",
+      "\t$TM_SELECTED_TEXT$1",
+      "end)"
+    ]
+  },
+  "function": {
+    "prefix": "function (...)",
+    "body": [
+      "function ($2)",
+      "\t$TM_SELECTED_TEXT$1",
+      "end"
+    ]
+  },
+  "pcall": {
+    "prefix": "pcall(function()",
+    "body": [
+      "$2pcall(function()",
+      "\t$TM_SELECTED_TEXT$1",
+      "end)"
+    ]
+  },
+  "for": {
+    "prefix": "for i = , ... do ",
+    "body": [
+      "for i = $1, $2 do",
+      "\t$TM_SELECTED_TEXT$3",
+      "end"
+    ]
+  },
+  "for-ipairs": {
+    "prefix": "for ... in ipairs() do ",
+    "body": [
+      "for $2 in ipairs($1) do",
+      "\t$TM_SELECTED_TEXT$3",
+      "end"
+    ]
+  },
+  "for-pairs": {
+    "prefix": "for ... in pairs() do ",
+    "body": [
+      "for $2 in pairs($1) do",
+      "\t$TM_SELECTED_TEXT$3",
+      "end"
+    ]
+  },
+  "while": {
+    "prefix": "while ... do",
+    "body": [
+      "while $1 do",
+      "\t$TM_SELECTED_TEXT$2",
+      "end"
+    ]
+  },
+  "do-end": {
+    "prefix": "do",
+    "body": [
+      "do",
+      "\t$TM_SELECTED_TEXT$1",
+      "end"
+    ]
+  },
+  "then-end": {
+    "prefix": "then",
+    "body": [
+      "then",
+      "\t$TM_SELECTED_TEXT$1",
+      "end"
+    ]
+  }
+}
+
