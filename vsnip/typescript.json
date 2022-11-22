@@ -1,0 +1,42 @@
+{
+  "if": {
+    "prefix": "if (…) {",
+    "body": [
+      "if ($1) {",
+      "\t$TM_SELECTED_TEXT$2",
+      "}"
+    ]
+  },
+  "for": {
+    "prefix": "for (…; …; …) {",
+    "body": [
+      "for ($1) {",
+      "\t$TM_SELECTED_TEXT$2",
+      "}"
+    ]
+  },
+  "forEach": {
+    "prefix": ".forEach(…",
+    "body": [
+      ".forEach($1 => {",
+      "\t$2",
+      "})"
+    ]
+  },
+  "map": {
+    "prefix": ".map(…",
+    "body": [
+      ".map($1 => {",
+      "\t$2",
+      "})"
+    ]
+  },
+  "filter": {
+    "prefix": ".filter(…",
+    "body": [
+      ".filter($1 => {",
+      "\t$2",
+      "})"
+    ]
+  }
+}

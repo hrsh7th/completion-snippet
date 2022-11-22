@@ -1,6 +1,6 @@
 {
   "if": {
-    "prefix": "if ... then",
+    "prefix": "if … then",
     "body": [
       "if $1 then",
       "\t$TM_SELECTED_TEXT$2",
@@ -8,13 +8,13 @@
     ]
   },
   "local-var": {
-    "prefix": "local var = ...",
+    "prefix": "local … = …",
     "body": [
       "local $1 = $2"
     ]
   },
   "local-function": {
-    "prefix": "local function (...)",
+    "prefix": "local function …(…)",
     "body": [
       "local function $1($2)",
       "\t$TM_SELECTED_TEXT$3",
@@ -30,10 +30,10 @@
     ]
   },
   "function": {
-    "prefix": "function (...)",
+    "prefix": "function …(…)",
     "body": [
-      "function ($2)",
-      "\t$TM_SELECTED_TEXT$1",
+      "function $1($2)",
+      "\t$TM_SELECTED_TEXT$3",
       "end"
     ]
   },
@@ -46,7 +46,7 @@
     ]
   },
   "for": {
-    "prefix": "for i = , ... do ",
+    "prefix": "for i = …, … do",
     "body": [
       "for i = $1, $2 do",
       "\t$TM_SELECTED_TEXT$3",
@@ -54,7 +54,7 @@
     ]
   },
   "for-ipairs": {
-    "prefix": "for ... ipairs() do ",
+    "prefix": "for … ipairs() do",
     "body": [
       "for $2 in ipairs($1) do",
       "\t$TM_SELECTED_TEXT$3",
@@ -62,7 +62,7 @@
     ]
   },
   "for-pairs": {
-    "prefix": "for ... pairs() do ",
+    "prefix": "for … pairs() do",
     "body": [
       "for $2 in pairs($1) do",
       "\t$TM_SELECTED_TEXT$3",
@@ -70,7 +70,7 @@
     ]
   },
   "while": {
-    "prefix": "while ... do",
+    "prefix": "while … do",
     "body": [
       "while $1 do",
       "\t$TM_SELECTED_TEXT$2",

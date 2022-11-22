@@ -1,6 +1,6 @@
 {
   "if": {
-    "prefix": "if ",
+    "prefix": "if …",
     "body": [
       "if $1",
       "\t$TM_SELECTED_TEXT$2",
@@ -8,7 +8,7 @@
     ]
   },
   "for": {
-    "prefix": "for ... in ...",
+    "prefix": "for … in …",
     "body": [
       "for $2 in $1",
       "\t$TM_SELECTED_TEXT$3",
@@ -16,7 +16,7 @@
     ]
   },
   "while": {
-    "prefix": "while ...",
+    "prefix": "while …",
     "body": [
       "while $1",
       "\t$TM_SELECTED_TEXT$2",
@@ -24,11 +24,11 @@
     ]
   },
   "try": {
-    "prefix": "try ... catch ...",
+    "prefix": "try … catch … endtry",
     "body": [
       "try",
       "\t$TM_SELECTED_TEXT$1",
-      "catch ${2:/.*/}",
+      "catch ${2:/.…/}",
       "\t$3",
       "endtry"
     ]
